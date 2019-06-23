@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D317635522BF0AC100D05144 /* ios_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D317635422BF0AC100D05144 /* ios_system.framework */; };
+		D317635722BF0AC700D05144 /* harfbuzz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317635622BF0AC700D05144 /* harfbuzz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D317635922BF0ACB00D05144 /* freetype.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317635822BF0ACB00D05144 /* freetype.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D317635B22BF0AD200D05144 /* libkpathsea.6.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317635A22BF0AD200D05144 /* libkpathsea.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D317635D22BF0AD600D05144 /* files.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317635C22BF0AD500D05144 /* files.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D317635F22BF0ADE00D05144 /* shell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317635E22BF0ADE00D05144 /* shell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D317636122BF0AE800D05144 /* libpdftex.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317636022BF0AE800D05144 /* libpdftex.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D317636222BF0B3D00D05144 /* ios_system.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D317635422BF0AC100D05144 /* ios_system.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D35233C322B7167500500181 /* extraCommandsDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D35233C122B7167500500181 /* extraCommandsDictionary.plist */; };
+		D35233C422B7167500500181 /* commandDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = D35233C222B7167500500181 /* commandDictionary.plist */; };
 		D35A348122B060C200D9B81C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A348022B060C200D9B81C /* AppDelegate.swift */; };
 		D35A348322B060C200D9B81C /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A348222B060C200D9B81C /* DocumentBrowserViewController.swift */; };
 		D35A348522B060C200D9B81C /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A348422B060C200D9B81C /* DocumentViewController.swift */; };
@@ -14,10 +24,39 @@
 		D35A348A22B060C200D9B81C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35A348822B060C200D9B81C /* Main.storyboard */; };
 		D35A348C22B060C300D9B81C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35A348B22B060C300D9B81C /* Assets.xcassets */; };
 		D35A348F22B060C300D9B81C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35A348D22B060C300D9B81C /* LaunchScreen.storyboard */; };
+		D3632EA022B6076600B1E65F /* Untitled.tex in Resources */ = {isa = PBXBuildFile; fileRef = D3632E9F22B6076600B1E65F /* Untitled.tex */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D328C92722B3696A003346D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D317636222BF0B3D00D05144 /* ios_system.framework in Embed Frameworks */,
+				D317635722BF0AC700D05144 /* harfbuzz.framework in Embed Frameworks */,
+				D317635F22BF0ADE00D05144 /* shell.framework in Embed Frameworks */,
+				D317635922BF0ACB00D05144 /* freetype.framework in Embed Frameworks */,
+				D317635D22BF0AD600D05144 /* files.framework in Embed Frameworks */,
+				D317636122BF0AE800D05144 /* libpdftex.dylib in Embed Frameworks */,
+				D317635B22BF0AD200D05144 /* libkpathsea.6.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D35A347D22B060C200D9B81C /* LaTeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D317635422BF0AC100D05144 /* ios_system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ios_system.framework; sourceTree = "<group>"; };
+		D317635622BF0AC700D05144 /* harfbuzz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = harfbuzz.framework; sourceTree = "<group>"; };
+		D317635822BF0ACB00D05144 /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = freetype.framework; sourceTree = "<group>"; };
+		D317635A22BF0AD200D05144 /* libkpathsea.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libkpathsea.6.dylib; sourceTree = "<group>"; };
+		D317635C22BF0AD500D05144 /* files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = files.framework; sourceTree = "<group>"; };
+		D317635E22BF0ADE00D05144 /* shell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shell.framework; sourceTree = "<group>"; };
+		D317636022BF0AE800D05144 /* libpdftex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpdftex.dylib; sourceTree = "<group>"; };
+		D35233C122B7167500500181 /* extraCommandsDictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = extraCommandsDictionary.plist; path = Resources/extraCommandsDictionary.plist; sourceTree = "<group>"; };
+		D35233C222B7167500500181 /* commandDictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = commandDictionary.plist; path = Resources/commandDictionary.plist; sourceTree = "<group>"; };
 		D35A348022B060C200D9B81C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D35A348222B060C200D9B81C /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
 		D35A348422B060C200D9B81C /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +65,8 @@
 		D35A348B22B060C300D9B81C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D35A348E22B060C300D9B81C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35A349022B060C300D9B81C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3632E1922B5D9BB00B1E65F /* LaTeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3632E9F22B6076600B1E65F /* Untitled.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Untitled.tex; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,32 +74,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D317635522BF0AC100D05144 /* ios_system.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D317635322BF0AC100D05144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D317635422BF0AC100D05144 /* ios_system.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D35A347422B060C200D9B81C = {
 			isa = PBXGroup;
 			children = (
+				D317636022BF0AE800D05144 /* libpdftex.dylib */,
+				D317635E22BF0ADE00D05144 /* shell.framework */,
+				D317635C22BF0AD500D05144 /* files.framework */,
+				D317635A22BF0AD200D05144 /* libkpathsea.6.dylib */,
+				D317635822BF0ACB00D05144 /* freetype.framework */,
+				D317635622BF0AC700D05144 /* harfbuzz.framework */,
+				D35233C222B7167500500181 /* commandDictionary.plist */,
+				D35233C122B7167500500181 /* extraCommandsDictionary.plist */,
 				D35A347F22B060C200D9B81C /* LaTeX */,
-				D35A347E22B060C200D9B81C /* Products */,
+				D3632E1922B5D9BB00B1E65F /* LaTeX.app */,
+				D317635322BF0AC100D05144 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		D35A347E22B060C200D9B81C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D35A347D22B060C200D9B81C /* LaTeX.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D35A347F22B060C200D9B81C /* LaTeX */ = {
 			isa = PBXGroup;
 			children = (
 				D35A348022B060C200D9B81C /* AppDelegate.swift */,
+				D3632E9F22B6076600B1E65F /* Untitled.tex */,
 				D35A348222B060C200D9B81C /* DocumentBrowserViewController.swift */,
 				D35A348422B060C200D9B81C /* DocumentViewController.swift */,
 				D35A348622B060C200D9B81C /* Document.swift */,
@@ -80,6 +132,7 @@
 				D35A347922B060C200D9B81C /* Sources */,
 				D35A347A22B060C200D9B81C /* Frameworks */,
 				D35A347B22B060C200D9B81C /* Resources */,
+				D328C92722B3696A003346D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -87,7 +140,7 @@
 			);
 			name = LaTeX;
 			productName = LaTeX;
-			productReference = D35A347D22B060C200D9B81C /* LaTeX.app */;
+			productReference = D3632E1922B5D9BB00B1E65F /* LaTeX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +155,7 @@
 				TargetAttributes = {
 					D35A347C22B060C200D9B81C = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -114,7 +168,7 @@
 				Base,
 			);
 			mainGroup = D35A347422B060C200D9B81C;
-			productRefGroup = D35A347E22B060C200D9B81C /* Products */;
+			productRefGroup = D35A347422B060C200D9B81C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -128,6 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35233C322B7167500500181 /* extraCommandsDictionary.plist in Resources */,
+				D35233C422B7167500500181 /* commandDictionary.plist in Resources */,
+				D3632EA022B6076600B1E65F /* Untitled.tex in Resources */,
 				D35A348F22B060C300D9B81C /* LaunchScreen.storyboard in Resources */,
 				D35A348C22B060C300D9B81C /* Assets.xcassets in Resources */,
 				D35A348A22B060C200D9B81C /* Main.storyboard in Resources */,
@@ -290,15 +347,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KUDH56487N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/python_ios/Frameworks",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/lua_ios",
+					"$(PROJECT_DIR)/ios_system/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/lib-tex/Frameworks",
+				);
 				INFOPLIST_FILE = LaTeX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/ios_system/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gitMechanics.LaTeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,15 +387,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KUDH56487N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/python_ios/Frameworks",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/lua_ios",
+					"$(PROJECT_DIR)/ios_system/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/lib-tex/Frameworks",
+				);
 				INFOPLIST_FILE = LaTeX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/ios_system/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gitMechanics.LaTeX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

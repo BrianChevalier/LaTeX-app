@@ -1,0 +1,6 @@
+framework module bc_ios {
+  umbrella header "bc_ios.h"
+
+  export *
+  module * { export * }
+}
